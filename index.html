@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanis Crochet Corner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        Free delivery on all orders over 2500 PKR in Lahore!
+    </div>
+
+    <header>
+        <div class="logo">Hanis Crochet Corner</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="collections.html">Collections</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Handmade Crochet Creations Made With Love</h1>
+
+            <p>
+                Discover beautiful handcrafted crochet flowers, plushies,
+                keychains, bouquets, and cozy gifts carefully made to
+                bring warmth and charm into your everyday life.
+            </p>
+
+            <a href="shop.html" class="hero-btn">Shop Collection</a>        
+        </div>
+
+        <div class="hero-image">
+            <img src="images/img.jpg" alt="Crochet Banner">
+        </div>
+
+    </section>
+
+<section class="categories">
+
+    <h2>Our Crochet Collection</h2>
+
+    <p>Beautiful handmade pieces crafted with care and creativity.</p>
+
+    <div class="category-grid">
+
+        <a href="bouquets.html" class="card">
+            <img src="images/img1.jpg" alt="Crochet Bouquets">
+            <h3>Crochet Bouquets</h3>
+        </a>
+
+        <a href="bags.html" class="card">
+            <img src="images/bag1.jpg" alt="Bags">
+            <h3>Bags</h3>
+        </a>
+
+        <a href="keychains.html" class="card">
+            <img src="images/img3.jpg" alt="Keychains">
+            <h3>Keychains</h3>
+        </a>
+
+        <a href="other.html" class="card">
+            <img src="images/img2.jpg" alt="Other">
+            <h3>Other</h3>
+        </a>
+
+    </div>
+
+</section>
+
+    <section class="about">
+
+        <img src="images/img4.jpg" alt="About Hanis Crochet Corner">
+
+        <div class="about-text">
+            <h2>Crafted By Hand</h2>
+
+            <p>
+                At Hanis Crochet Corner, every stitch is made with patience,
+                creativity, and love. Our goal is to create cozy handmade
+                crochet products that feel personal, warm, and unique.
+                Each item is carefully designed to make your gifts and spaces
+                feel extra special.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Hanis Crochet Corner • Handmade With Love
+    </footer>
+    <script>// Open category from home page
+const params = new URLSearchParams(window.location.search);
+const category = params.get("category");
+
+if (category) {
+    const button = document.querySelector(`.filters button[data-filter="${category}"]`);
+
+    if (button) {
+        button.click();
+    }
+}</script>
+</body>
+</html>

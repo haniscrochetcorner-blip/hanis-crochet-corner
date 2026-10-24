@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Customize Your Bouquet | Hanis Crochet Corner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" /> 
+<link rel="stylesheet" href="customization.css" /> 
+</head> 
+<body> 
+      <header>
+        <div class="logo">
+            Hanis Crochet Corner
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="collections.html">Collections</a>
+            <a href="about.html">About</a> 
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav> 
+    </header>
+    <div class="customization-section">
+
+<h2>Design Your Dream Crochet Bouquet</h2>
+
+<p class="custom-intro">
+    Every bouquet at Hanis Crochet Corner is handmade with care. Tell us your preferences below and we'll create a bouquet that's uniquely yours.
+</p>
+<p class="custom-note">
+📸 Send your inspiration photos through Instagram DM and mention the name used in this request so we can match your design.
+</p>
+ <a href="https://www.instagram.com/hanis_crochet_corner/" target="_blank" class="btn">
+        Message
+    </a>
+
+<label for="customer-name">Your Name</label>
+<input
+    type="text"
+    id="customer-name"
+    placeholder="Enter your full name">
+
+<label for="customer-email">Email Address</label>
+<input
+    type="email"
+    id="customer-email"
+    placeholder="Enter your email address">
+
+<label for="flower-request">
+    Flowers,Its Colors & Quantity
+</label>
+
+<textarea
+    id="flower-request"
+    rows="4"
+    placeholder="Example: 3 Sunflowers (Yellow), 5 Roses (Red), 2 Daisies (White)">
+</textarea>
+
+
+<label for="packaging-color">
+     Wrapping Color
+</label>
+
+<input
+    type="text"
+    id="packaging-color"
+    placeholder="Example: White, Beige, Black, Pink">
+
+<label for="ribbon-color">
+    Ribbon Color
+</label>
+
+<input
+    type="text"
+    id="ribbon-color"
+    placeholder="Example: Gold, White, Yellow, Pink">
+
+<label for="budget">
+    Budget Range (Optional)
+</label>
+
+<input
+    type="text"
+    id="budget"
+    placeholder="Example: Rs. 3,000 - Rs. 5,000">
+
+<label for="additional-details">
+    Additional Details
+</label>
+
+<textarea
+    id="additional-details"
+    rows="3"
+    placeholder="Tell us about any special requests, preferred style, bouquet shape, theme, or anything else you'd like us to know.">
+</textarea>
+
+<div class="custom-note">
+    ✨ Once your request is submitted, we'll review the details and contact you regarding pricing, availability, and delivery options.
+</div>
+<p id="success-message"></p>
+<button class="btn" onclick="addCustomBouquetToCart()">
+    Add Custom Bouquet to Cart
+</button>
+    </div>
+<script src="bouquet.js"></script>
+</body> 
+</html>
+

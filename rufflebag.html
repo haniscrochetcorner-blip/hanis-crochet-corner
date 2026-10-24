@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Ruffle Bag | Hanis Crochet Corner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" /> 
+<link rel="stylesheet" href="rufflebag.css" /> 
+</head> 
+<body> 
+    <header>
+        <div class="logo">
+            Hanis Crochet Corner
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="collections.html">Collections</a>
+            <a href="about.html">About</a> 
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav> 
+    </header>
+        <div class="product-page">
+<!-- PRODUCT IMAGES -->
+    <div class="product-gallery">
+        <img src="images/bag.jpg" alt="Ruffle Bag" class="main-image" /> 
+        <div class="thumbnail-gallery"> 
+            <img src="images/bag1.jpg" alt="Ruffle Bag Front" />
+            <img src="images/bag2.jpg" alt="Ruffle Bag Side" /> 
+            <img src="images/bag3.jpg" alt="Ruffle Bag Close Up" />
+        </div>
+        <div class="why-love-it">
+        <h1>
+            Why You'll Love It
+        </h1> 
+        <p> Every Ruffle Bag from Hanis Crochet Corner is crafted individually, meaning no two pieces are exactly alike. The handmade nature of each item gives it a special character that mass-produced products simply cannot replicate. Designed with attention to detail and created with care, this bag makes a beautiful statement piece while supporting handmade artistry. </p>
+        </div>
+        </div>
+<!-- PRODUCT DETAILS -->
+    <div class="product-info">
+         <h1>
+            Ruffle Bag
+        </h1>
+          <p class="short-description">
+         A beautifully handcrafted crochet ruffle bag designed to combine elegance, practicality, and handmade charm.
+         </p> 
+          <p class="short-description">
+             Add a touch of handmade charm to your look with the Ruffle Bag. Handcrafted with soft, durable yarn, this beautiful crochet bag features a vibrant red design, delicate white ruffle details, and a lovely daisy flower accent. 
+        </p> 
+          <h2>
+            Description
+        </h2> 
+    <ul>
+        <li>100% Handmade Crochet</li>
+        <li>Premium Acrylic Yarn</li>
+        <li>Durable & Lightweight</li>
+        <li>Reusable</li> 
+        <li>Perfect for Everyday Use</li> 
+        <li>Custom Colors Available Upon Request</li>
+    </ul> 
+        <h2>Care Instructions</h2>
+    <ul>
+        <li>Hand wash gently</li>
+        <li>Do not bleach</li>
+        <li>Lay flat to dry</li>
+        <li>Avoid excessive stretching</li>
+    </ul> 
+    <div class="customization-section"> 
+        <h3>Customize Your Ruffle Bag</h3>
+                <div class="product-price-section">
+    <label for="size">Choose Size:</label>
+    <select id="size" onchange="updatePrice()">
+    <option value="2500">Small </option>
+    <option value="3200">Medium</option>
+    <option value="4000">Large </option>
+</select>
+
+</div>
+        <p class="custom-note">
+✨ Need a different size? Contact us before ordering to discuss custom measurements and pricing.
+        </p>
+        <label for="bag-color">Bag Color</label> 
+        <input type="text"
+         id="bag-color"
+         name="bag-color"
+         placeholder="e.g. Red, Pink, Blue" />
+         <label for="Ruffle-color">Ruffle Color</label>
+          <input type="text"
+          id="Ruffle-color"
+          name="Ruffle-color"
+          placeholder="e.g. Red, Pink, Blue" />
+                <label for="daisy">Add a Daisy Flower?</label>
+                <select id="daisy" name="daisy">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option> 
+                </select> 
+        <div id="daisy-options" style="display: none">
+        <label for="petal-color">Daisy Petal Color</label>
+                <input type="text" id="petal-color" name="petal-color" placeholder="e.g. White" />
+                    <label for="center-color">Daisy Center Color</label>
+                <input type="text" id="center-color" name="center-color" placeholder="e.g. Yellow" />
+             </div>
+              <label for="notes">Additional Notes</label> 
+              <textarea id="notes" name="notes" rows="3" placeholder="Any special requests?" >
+
+              </textarea>
+             </div>
+                      <div class="product-price">
+    Rs. <span id="main-price">2,500</span>
+</div>
+               <a href="contact.html" class="btn"> Order Now </a>
+             </div> 
+            </section>
+
+                <script src="rufflebag.js"></script>
+             </body> 
+             </html>
